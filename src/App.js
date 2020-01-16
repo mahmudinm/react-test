@@ -41,24 +41,27 @@ function App() {
     e.preventDefault();
 
     if (check.check1 === true && check.check2 === true && check.check3 === true) {
+      
       setHasil(accumulate([
         parseInt(values.nilai1), parseInt(values.nilai2), parseInt(values.nilai3)
       ], operator)); 
       setMessage('');
 
-    } else if (check.check1 === true && check.check2) {
+    } else if (check.check1 === true && check.check2 === true) {
+
       setHasil(accumulate([
         parseInt(values.nilai1), parseInt(values.nilai2)
       ], operator)); 
       setMessage('');
-    } else if (check.check1 === true && check.check3) {
+
+    } else if (check.check1 === true && check.check3 === true) {
 
       setHasil(accumulate([
         parseInt(values.nilai1), parseInt(values.nilai3)
       ], operator)); 
       setMessage('');
 
-    } else if (check.check2 === true && check.check3) {
+    } else if (check.check2 === true && check.check3 === true) {
 
       setHasil(accumulate([
         parseInt(values.nilai2), parseInt(values.nilai3)
